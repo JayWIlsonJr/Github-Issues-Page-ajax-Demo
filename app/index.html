@@ -23,26 +23,22 @@
   </head>
   <body>
 
+  <script type="text/template" id="issues_titles">
+    <li><a href=""><%= title %></a></li>
+  </script>
+
+  <script type="text/template" id="issues_template">
+    <p><%= issue %></p>
+  </script>
+  
+
     <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
+      <h1>'Allo, Yer open issues are below</h1>
+      
+      <div class="titles_container"></div><!-- .titles_container -->
 
-        <li>Sass</li>
+      <div class="issues_container"></div><!-- .issues_container -->
 
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
     </div>
 
     <!-- build:js scripts/vendor.js -->
